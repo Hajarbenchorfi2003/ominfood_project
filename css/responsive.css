@@ -1,0 +1,326 @@
+
+/*  PERFECT WAY USE BREAK DOWNS */
+/*  1.  Identify the problem or goal */
+/*  2.  Break down the problem into smaller parts */
+/* DON4T USE PX   REM AND em do not  depend on html font size in mediaa queries 
+ instead 1rem=1em=16px */
+
+ /* bellow to 1344px */
+
+ /* Mobile nav toggle button */
+.mobile-nav-toggle {
+  display: none;
+
+}
+.icon-mobile-nav{
+  display: none;
+
+}
+nav{
+  display: block;
+}
+
+
+
+ @media (max-width: 84em) {
+
+  
+  html {
+    font-size: 56.25%;
+  }
+  /* general  heading */
+  
+  .hero{
+    max-width: 120rem;
+    padding-left:4rem;
+  
+  }
+}
+/* bellow to 1200px  LANDSCAPE TABLETE*/
+
+@media (max-width: 75em) {
+    html {
+      /* 9px / 16px */
+      font-size: 56.25%;
+    
+    }
+    .heading-secondary {
+      font-size: 3.6rem;
+    
+    }
+    .heading-tertiary {
+      font-size: 2.6rem;
+    
+    }
+    .heading-primary {
+      font-size: 4.8rem;
+     
+    }
+    .main-nav-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+  }
+  /* bellow to 940px */
+
+  @media (max-width: 60em) {
+    html {
+      /* 7px / 16px */
+      font-size: 44%;
+    
+    }
+    nav{
+      display:none;
+    }
+    .how-it-works-image {
+      width: 38%;
+      max-width: 150px;
+      object-fit: contain;
+    }
+    .hero-text-box{
+      padding:3.8rem 0; 
+     align-items: center;
+     
+   
+   }
+  
+    .hero{
+      grid-template-columns: 1fr ;
+      justify-content:center;
+      padding: 0 8rem;
+      gap: 2rem;
+
+    }
+    .hero-img {
+      width: 60%;
+      
+    }
+    .hero-description{
+      text-align: center;
+
+    }
+    .heading-primary{
+      text-align: center;
+    }
+    .hero-img-box{
+      text-align: center;
+
+    }
+    .delivered-meals{
+      margin-top: 3.2rem;
+    }
+    .logo{
+      height: 2rem;
+    }
+    .logos img {
+      height: 2.4rem;
+    }
+    .meal-content {
+    padding: 2.2rem 0rem 1rem 1rem;
+    }
+    .testimonials {
+      
+      grid-template-columns: 1fr;
+     
+    }
+    .images-box {
+     
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .cta-form {
+      
+      grid-template-columns: 1fr;
+    }
+  }
+ /* bellow to 700px */
+ @media (max-width: 44em) {
+
+ 
+  html {
+    /* 7px / 16px */
+    font-size: 50%;
+  
+  }
+  
+ 
+  .logos img {
+    height:1.2rem;
+  }
+  .meals-box {
+    
+    margin: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+   
+    gap: 3rem;
+  }
+  
+  .pricing-plan{
+    
+    width: 100%;
+    
+    }
+
+  
+  
+  
+  .diet-texte {
+    text-align: center;  
+  }
+  
+ 
+  
+  .meal-diet{
+    grid-column: 1/-1;
+    align-self: center;
+    justify-self: center;
+
+  }
+  .list-diet{
+    text-align: center;
+  }
+  .Customer-testimonials {
+    
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    gap: 1.5rem;
+    row-gap: 2rem;
+  }
+  .pricing-plans-boxs {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .starts{
+    justify-self: center;
+  }
+  .Complete{
+    justify-self: center;
+  }
+ 
+  .pricing-features {
+    grid-template-columns:repeat(2, 1fr);
+    padding: 0;
+  }
+  .cta-form {
+    display: grid;
+    grid-template-columns:1fr;
+  }
+  .formulaire{
+    grid-template-columns:repeat(2, 1fr);
+  }
+  /* .form-image{
+    height: 30rem;
+    width: 100%;
+    grid-row: 1/2;
+  
+  } */
+  .footer {
+    grid-template-columns: repeat(6, 1fr);
+     align-items: start;
+    justify-content: center;
+  }
+  .nav-col{
+    grid-column: span 2;
+   
+    margin-bottom: 3.2rem;
+  }
+   .logo-col{
+    grid-row: 2/3;
+    grid-column: span 3;
+  }
+  .contacts{
+    grid-row: 2/3;
+    grid-column: span 3;
+  }
+
+ 
+  .pesoudo-element::after{
+   
+    top: 6%;
+    right: -25%;
+
+  }
+
+  
+ }
+ /* bellow to 550px */
+ @media (max-width: 34em) {
+  html {
+    /* 7px / 16px */
+    font-size: 37%;
+  
+  }
+  .pesoudo-element::after{
+   
+    top: 6%;
+    right: -12%;
+
+  }
+  .hero-img {
+    width: 75%;
+  }
+ 
+  .steps {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+   ;
+  }
+  .how-it-works-image {
+    width: 27%;
+  }
+  .logos img {
+    height:1.2rem;
+  }
+  .meals-box {
+    
+    margin: 2.5rem;
+    grid-template-columns: repeat(1, 1fr);
+   
+    gap: 3rem;
+  }
+  .Customer-testimonials {
+    
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    gap: 1.5rem;
+    row-gap: 2rem;
+  }
+  .pricing-plans-boxs {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .pricing-features {
+    grid-template-columns:1fr;
+    padding: 0;
+  }
+  .cta-form {
+    display: grid;
+    grid-template-columns:1fr;
+  }
+  .formulaire{
+    grid-template-columns:1fr;
+  }
+  .form-image{
+    height: 30rem;
+    width: 100%;
+    grid-row: 1/2;
+  
+  }
+  .delivered-meals{
+    flex-direction: column;
+  }
+  .pricing-plan{
+    
+    width: 75%;
+    
+    }
+  
+ }
+ 

@@ -12,6 +12,14 @@
 html {
   
   font-size: 62.5%;
+  /* only works if ther is nothing absouluetely positioned in relation to body */
+  overflow-x: hidden;
+}
+.mobile-nav-toggle{
+  display:none;
+}
+.close-icon{
+  display:none;
 }
 
 body {
@@ -19,6 +27,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 .container {
@@ -65,24 +74,25 @@ body {
   }
   /* header  */
   .header {
-    display: flex;
+    display:flex;
+    position:relative;
     justify-content: space-between;
     align-items: center;
     background-color: #fdf2e9;
   
-    /* Because we want header to be sticky later */
+   
     height: 9.6rem;
     padding: 0 4.8rem;
-    position: sticky; /* Fixe la barre au sommet */
-    top: 0; /* Toujours collée en haut */
-    width: 100%; /* Prend toute la largeur */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Transitions douces */
+    position: sticky; 
+    top: 0; 
+    width: 100%; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
     z-index: 100;
     
   }
   .header.scrolled {
-    background-color: rgba(253, 242, 233, 0.877); /* Fond transparent initial */
-    box-shadow: none; /* Supprime l'ombre */
+    background-color: rgba(253, 242, 233, 0.877);
+    box-shadow: none; 
   }
   
   .logo {
@@ -386,11 +396,10 @@ line-height: 1.2;
 }
 
 .how-it-works-image {
-  width: 60%; /* Adjust the size of the image */
-  max-width: 150px; /* Prevents the image from exceeding a max size */
-  object-fit: contain; /* Ensures the image fits well */
+  width: 60%; 
+  max-width: 150px; 
+  object-fit: contain; 
 }
-
 /* section meals */
 .meals-section{
 padding: 9.6rem 0;
@@ -449,7 +458,7 @@ margin-bottom: 1.5rem;
 
 .meals-icons {
 stroke: #e67e22;
-width: 24px; /* Ajustement pour une taille cohérente */
+width: 24px; 
 height: 24px;
 color: #e67e22;
 ;
@@ -460,7 +469,7 @@ color: #e67e22;
 display: flex;
 gap: 2rem;
 align-items: center;
-margin-bottom: 1.5rem; /* Ajustement pour une meilleure mise en page */
+margin-bottom: 1.5rem; 
 }
 
 .meals-box {
@@ -485,7 +494,7 @@ transform: translateY(-6%);
 
 .meal-items img {
 width: 100%;
-display: block; /*  pour un meilleur rendu */
+display: block; 
 border-top-right-radius: 12px;
 border-top-left-radius: 12px;
 }
@@ -504,7 +513,7 @@ display: flex;
 flex-direction: column;
 gap: 1.6rem;
 list-style: none;
-padding: 0; /* Évite les marges par défaut des ul */
+padding: 0; 
 color: #555;
 }
 
@@ -614,11 +623,11 @@ overflow: hidden;
 .images-box img {
 width: 100%;
 transform: all 0.4s;
-overflow: hidden;
+
 }
-.image-item {
+.image-box-item {
   position: relative;
-  overflow: hidden; /* Ensures the image scale is clipped */
+  overflow: hidden;
 }
 .image-item:hover{
   transform: scale(1.1);

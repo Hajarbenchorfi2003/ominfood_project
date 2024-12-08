@@ -210,12 +210,6 @@ allow no trasmaition
  @media (max-width: 44em) {
 
  
-
-  
- 
-  .logos img {
-    height:1.2rem;
-  }
   .meals-box {
     
     margin: 2.5rem;
@@ -360,7 +354,7 @@ allow no trasmaition
     width: 27%;
   }
   .logos img {
-    height:1.2rem;
+    height:1.8rem;
   }
   .meals-box {
     
